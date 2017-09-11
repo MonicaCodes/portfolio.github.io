@@ -5,8 +5,14 @@
   line-height: 0px;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
   background-color: #ffffff;
+  max-width: 1280px;
 }
 
                    /* Navigation Section */
@@ -17,6 +23,7 @@ nav {
   position: fixed;
   width: 100%;
   height: 120px;
+  z-index: 1;
 }
 
 nav .logo {
@@ -86,7 +93,7 @@ nav .divider img{
 
                 /* My Work Section */
 
-.my-work {
+.header {
     width: 100%;
     padding-top: 80px;
 }
@@ -95,12 +102,14 @@ nav .divider img{
 
 .work-grid {
     display: inline-grid;
-    grid-auto-columns: 120.5px 515px 515px 120.5px;
+    grid-auto-columns: 120px 515px 515px 120px;
     grid-auto-rows: 467px 467px;
     grid-auto-flow: column;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    margin-top: 80px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
 
 }
 
@@ -140,10 +149,195 @@ nav .divider img{
  }
 
 
+ /* Tool Box Section */
+
+ .container .icon-grid {
+     display: inline-grid;
+     grid-auto-columns: 50px 115px 115px 115px 115px 115px 115px 50px;
+     grid-auto-rows: 143px 143px;
+     grid-auto-flow: column;
+     grid-row-gap: 47px;
+     grid-column-gap: 70px;
+     padding-top: 80px;
+     padding-bottom: 80px;
+}
+
+.icon img {
+    max-width: 111px;
+    max height: 110px;
+    justify-content: center;
+    margin: 5px;
+    -webkit-filter: drop-shadow(-2px 0 4px rgba(0,0,0,0.50));
+}
+
+#icon1 {
+    grid-column-start: 2;
+    grid-column-end: span col2-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#icon2 {
+    grid-column-start: 3;
+    grid-column-end: span col3-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#icon3 {
+    grid-column-start: 4;
+    grid-column-end: span col4-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#icon4 {
+    grid-column-start: 5;
+    grid-column-end: span col5-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#icon5 {
+    grid-column-start: 6;
+    grid-column-end: span col6-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#icon6 {
+    grid-column-start: 7;
+    grid-column-end: span col7-start;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+#icon7 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: span row2-start;
+}
+
+#icon8 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: span row2-start;
+}
+
+#icon9 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    grid-row-end: span row2-start;
+}
+
+#icon10 {
+    grid-column-start: 5;
+    grid-row-start: 2;
+    grid-row-end: span row2-start;
+}
+
+#icon11 {
+    grid-column-start: 6;
+    grid-row-start: 2;
+    grid-row-end: span row2-start;
+}
+
+#icon12 {
+    grid-column-start: 7;
+    grid-row-start: 2;
+    grid-row-end: span row2-start;
+}
 
 
+.icon p {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Avenir;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 1.12px;
+}
+
+/* Testimonials Section*/
+
+
+#slides{
+    position: relative;
+    height: 450px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    margin: 50px;
+    width: 1200px;
+    height: 450px;
+    opacity: 0;
+    z-index: 1;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    display: table-cell;
+    color: #000000;
+    letter-spacing: 1.05px;
+    line-height: 36px;
+    padding: 80px;
+    box-sizing: border-box;
+    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+    color: #fff;
+
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+.testimonials .container {
+    display: table;
+    margin-top: 25px;
+
+}
+
+
+.slide:nth-of-type(1){
+    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+}
+.slide:nth-of-type(2){
+    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+}
+.slide:nth-of-type(3){
+    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+}
+
+
+
+  /* MEDIA QUERIES */
+
+
+@media (min-width: 460px) {
+  .container {
+    width: 40%;
+  }
 
 @media (min-width: 768px) {
   .container {
-    width: 70%;
+    width: 70%
+  }
+
+@media (min-width: 992px) {
+  .container {
+    width: auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
   }
