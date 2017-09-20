@@ -33,33 +33,26 @@ body {
 
 header {
     margin: auto;
+    display: inline-flex;
 }
 
 header .navigation {
-    max-width: 1280px;
-    max-height: 125px;
+    width: 100%;
+    height: 7rem;
     background-color: #ffffff;
     margin: auto;
     position: fixed;
     z-index: 4;
 }
 .logo {
-    width: 50%;
     display: inline-flex;
     line-height: 1;
-    margin-left: 3rem
+    margin-left: 3rem;
 }
-.logo h1 {
-    width: 50%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-family: "Anton-Regular", sans-serif;
-    font-size: 2.8vw;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-                color: white;
-               -webkit-text-fill-color: transparent;
+.color-bg {    -webkit-background-clip: text;
+    color: white;
+    -webkit-text-fill-color: transparent;
+
                background-image: -webkit-gradient()(linear, left top, right top, from(#fa8500), to(#bd10e0));
                background-image: -webkit-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
                background-image:    -moz-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
@@ -67,26 +60,40 @@ header .navigation {
                background-image:      -o-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
 
 }
+.logo > h1 {
+    margin-left: 5rem;
+    font-family: "Anton-Regular", sans-serif;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-flex;
+    line-height: 1;
+
+    /* -webkit-background-clip: text; */
+    /* color: white; */
+    /* -webkit-text-fill-color: transparent; */
+}
 
 header .sub {
-  width: 50%;
-  margin: auto;
+    width: inherit;
+    display: inline-flex;
+    margin-left: 1rem;
   font-family: "PoiretOne-Regular", cursive;
-  font-size: 3.1vw;
+  font-size: 3vw;
   letter-spacing: 1px;
 
 }
 
 
 .mainMenu{
-    max-width: 50%;
+    width: auto;
     margin: auto;
     display: inline-flex;
 }
 
 
 .mainMenu ul {
-    width:50%;
+    width: auto;
     margin: auto;
     list-style-type: none;
     display: inline-flex;
@@ -127,21 +134,16 @@ header .sub {
 
 
 /* Navigation Divider Bar */
-.nav-divider {
-    max-width: 1280px;
-    position: fixed;
-    bottom: 0;
-    display: inline-flex;
-}
-.nav-divider img {
+nav.navigation::after {
+    content: '';
     width: 100%;
-    height: 100%;
-    margin: auto;
-    position: fixed;
-    bottom: 0;
-    z-index: 3;
-    display: inline-flex;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 5px;
+    background: -webkit-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
 }
+
 
 /* Bio Section */
 .bio {
