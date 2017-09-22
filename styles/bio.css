@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -7,13 +7,13 @@ html, body {
 
 body {
   background-color: #ffffff;
-}
+}*/
 /*header::after {
   content: "";
   background-image: url("../images/nav-divider.png");
 }*/
 
-@font-face {
+/*@font-face {
     font-family: "Anton-Regular";
     src: url('Anton-Regular.otf'),
          url(Anton-Regular.svg) format('svg');
@@ -68,10 +68,6 @@ header .navigation {
     text-transform: uppercase;
     display: inline-flex;
     line-height: 1;
-
-    /* -webkit-background-clip: text; */
-    /* color: white; */
-    /* -webkit-text-fill-color: transparent; */
 }
 
 header .sub {
@@ -130,7 +126,7 @@ header .sub {
 
                     }
 
-
+*/
 
 
 /* Navigation Divider Bar */
@@ -151,8 +147,8 @@ nav.navigation::after {
     margin: auto;
 }
 
-.bio img {
-    padding-top: 6.2rem;
+.bio-header {
+    padding-top: 1rem;
     width: 100%;
     display: flex;
 }
