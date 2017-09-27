@@ -6,12 +6,9 @@ html, body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #EFEFF4;
 }
-/*header::after {
-  content: "";
-  background-image: url("../images/nav-divider.png");
-}*/
+
 
 @font-face {
     font-family: "Anton-Regular";
@@ -33,93 +30,55 @@ body {
 
 
 header {
+    min-width: 100%;
+    max-height: 120px;
+    background: #1b1721;
     margin: auto;
-    display: inline-flex;
-}
-
-header .navigation {
-    width: 100%;
-    max-height: 7rem;
-    background-color: #ffffff;
-    margin: auto;
+    display: inline-block;
     position: fixed;
     z-index: 4;
 }
-.logo {
-    display: inline-flex;
-    line-height: 1;
-    margin-left: 3rem;
-}
-.color-bg {    -webkit-background-clip: text;
-    color: white;
-    -webkit-text-fill-color: transparent;
 
-               background-image: -webkit-gradient()(linear, left top, right top, from(#fa8500), to(#bd10e0));
-               background-image: -webkit-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
-               background-image:    -moz-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
-               background-image:     -ms-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
-               background-image:      -o-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
-
-}
-.logo > a {
-    font-family: "Anton-Regular", sans-serif;
-    font-size: 3vw;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    display: inline-flex;
-    line-height: 2.5;
-
-    /* -webkit-background-clip: text; */
-    /* color: white; */
-    /* -webkit-text-fill-color: transparent; */
+.logo-image {
+    width: 100px;
+    height: 94px;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 4rem;
 }
 
-header .sub {
-    width: inherit;
-    display: inline-flex;
+h1{
     margin-left: 2rem;
-  font-family: "PoiretOne-Regular", cursive;
-  font-size: 3vw;
-  letter-spacing: 1px;
+    font-family: "Anton-Regular", sans-serif;
+    font-size: 3.28vw;
+    letter-spacing: 3.28px;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
 
 }
 
 
 .mainMenu{
-    width: auto;
-    margin: auto;
-    display: inline-flex;
+    display: inline-block;
+    margin-left: 30rem;
 }
-
-
-.mainMenu ul {
-    width: auto;
-    margin: auto;
-    list-style-type: none;
-    display: inline-flex;
-}
-
-.mainMenu ul li {
-    display: inline-flex;
-    text-transform: uppercase;
-}
-
-
-.mainMenu ul  li  a {
-    display: inline-flex;
-    color: #000000;
-    font-family: Arial-Black, san-serif;
-    padding: 1rem;
-    text-decoration: none;
+.mainMenu .icon {
+    float: right;
+    padding: 10px;
 }
 
 
 
 
 
-.mainMenu ul li:hover a {
-                        -webkit-background-clip: text;
-                    	color: white;
+
+
+
+
+
+.icon:hover {
+                        border-radius: 20px;
                     	-webkit-text-fill-color: transparent;
                       	background-image: -webkit-gradient()(linear, left top, right top, from(#fa8500), to(#bd10e0));
                     	background-image: -webkit-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
@@ -132,16 +91,6 @@ header .sub {
 
 
 
-/* Navigation Divider Bar */
-nav.navigation::after {
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    height: 5px;
-    background: -webkit-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
-}
 
 .navigation-container {
   max-width: 1280px;
@@ -156,47 +105,36 @@ nav.navigation::after {
 
 .hero img {
   width: 100%;
-  padding-top: 2rem;
+  padding-top: 10rem;
   display: inline-flex;
 
 }
 
 /* My Work Section */
 
-.my-work .container {
-    max-width: 1280px;
-    max-height: 43px;
-    margin: auto;
-    padding-top: 120px;
-    padding-bottom: 80px;
-    display: flex;
-}
-
-.my-work img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    align-items: center;
-    display: flex;
-}
 
 .work-grid {
-	margin: auto;
+    width: 80rem;
+    height: 40rem;
+	margin: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /*  Grid Columns  */
-.box {
-	display: inline-block;
-    background-color: grey;
-    width: 467px;
-    height: 467px;
+.work-grid a {
+    width: 39.5rem;
+    height:20rem;
+    border-color: black;
+    border-width: 0.05px;
+    border-style: solid;
+    display: inline-flex;
 	float:none;
-	margin: .8% .8% .8% .8%;
-    justify-content: center;
+    flex-wrap:wrap;
 }
+
+
 
 .my-work:before,
 .my-work:after { content:""; display:grid; }
@@ -204,6 +142,18 @@ nav.navigation::after {
 .my-work { zoom:1; /* For IE 6/7 */ }
 
 
+/* Bio Section */
+
+.biography .container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.biography img {
+  width: 100%;
+  display: inline-flex;
+
+}
 
  /* Tool Box Section */
 
@@ -212,12 +162,7 @@ nav.navigation::after {
     max-height: 800px;
     margin: auto;
 }
-.tool-box-header img{
-    width: 100%;
-    margin: auto;
-    margin-top: 5rem;
-    display: flex;
-}
+
 .icon-grid-row-1 {
     width: 100%;
     display: flex;
@@ -270,7 +215,7 @@ nav.navigation::after {
 
 /* Medium screens */
 @media all and (max-width: 768px) {
-    .icon{
+    .tool{
         display: flex;
        flex-direction: row;
        flex-flow: row wrap;
@@ -285,7 +230,7 @@ nav.navigation::after {
 
 /* Small screens */
 @media all and (max-width: 500px) {
- .icon{
+ .tool{
      display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -299,7 +244,7 @@ nav.navigation::after {
   }
 }
 
-.icon img {
+.tool img {
     max-width: 111px;
     max height: 110px;
     display: flex;
@@ -309,7 +254,7 @@ nav.navigation::after {
     height: 100%;
     align-self: center;
 }
-.icon p {
+.tool p {
     width: 100%;
     height: 100%;
     display: flex;
@@ -376,7 +321,7 @@ nav.navigation::after {
     line-height: 36px;
     padding: 80px;
     box-sizing: border-box;
-    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+    background-color: #d8d8d8;
     color: #fff;
 
     -webkit-transition: opacity 2s;
@@ -392,13 +337,13 @@ nav.navigation::after {
 
 
 .slide:nth-of-type(1){
-    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+    background-color: #d8d8d8;
 }
 .slide:nth-of-type(2){
-    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+    background-color: #d8d8d8;
 }
 .slide:nth-of-type(3){
-    background-image: linear-gradient(0deg, #BD10E0 0%, #FA8500 13%);
+    background-color: #d8d8d8;
 }
 
 /* Let's Work Together */
@@ -408,12 +353,12 @@ nav.navigation::after {
     max-height: 400px;
     margin: auto;
     justify-content: center;
+    align-content: center;
     margin-top: 120px;
-    margin-bottom: 80px;
 }
 .workTogether h1 {
 font-family: "Anton-Regular", sans-serif;
-font-size: 75px;
+font-size: 7.5vw;
 color: #000000;
 letter-spacing: 4.69px;
 text-transform: uppercase;
@@ -421,18 +366,20 @@ text-align: center;
 padding-top: 80px;
 width: 100%;
 }
-.subheader p {
+.subheader {
 font-family: "PoiretOne-Regular", cursive;
-font-size: 30px;
+font-size: 2.5vw;
 color: #000000;
 letter-spacing: 1px;
 text-align: center;
+width: 100%;
 }
+
+
 .email-btn img  {
-    height: 130px;
     width: 130px;
+    height: 130px;
     margin: auto;
-    display: block;
     margin-top: 40px;
     -webkit-filter: drop-shadow(-1px 0 1px rgba(0,0,0,0.50));
 }
