@@ -2,7 +2,8 @@ html, body {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x:  hidden;
+    overflow-y: scroll;
 }
 
 body {
@@ -29,14 +30,14 @@ body {
 }
 
 
-header {
+header nav{
     min-width: 100%;
     max-height: 120px;
     background: #1b1721;
     margin: auto;
     display: inline-block;
     position: fixed;
-    z-index: 4;
+    z-index: 100;
 }
 
 .logo-image {
@@ -47,7 +48,7 @@ header {
     margin-left: 4rem;
 }
 
-h1{
+nav h1{
     margin-left: 2rem;
     font-family: "Anton-Regular", sans-serif;
     font-size: 3.28vw;
@@ -55,33 +56,36 @@ h1{
     color: white;
     text-transform: uppercase;
     display: inline-block;
+    position: absolute;
+    bottom: 3px;
 
 }
 
 
 .mainMenu{
     display: inline-block;
-    margin-left: 30rem;
+    position: relative;
 }
 .mainMenu .icon {
+    position: relative;
+    padding: 40px;
     float: right;
-    padding: 10px;
+}
+.icon img {
+    padding: 7px;
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    bottom: 2px;
 }
 
 
 
-
-
-
-
-
-
-
-.icon:hover {
-                        border-radius: 20px;
+.icon:hover img{
+                        border-radius: 30px;
                     	-webkit-text-fill-color: transparent;
-                      	background-image: -webkit-gradient()(linear, left top, right top, from(#fa8500), to(#bd10e0));
-                    	background-image: -webkit-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
+                      	background-image: -webkit-gradient()(linear, top, bottom, from(#fa8500), to(#bd10e0));
+                    	background-image: -webkit-linear-gradient(top, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
                     	background-image:    -moz-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
                     	background-image:     -ms-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
                     	background-image:      -o-linear-gradient(left, #fa8500, #f17322, #dc4c6d, #c21ace, #bd10e0);
@@ -99,113 +103,139 @@ h1{
 /* Hero Image */
 
 .hero .container {
-    max-width: 1040px;
-    margin: auto;
-}
-
-.hero img {
-  width: 100%;
-  padding-top: 10rem;
-  display: inline-flex;
-
-}
-
-/* My Work Section */
-
-
-.work-grid {
-    width: 80rem;
-    height: 40rem;
-	margin: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/*  Grid Columns  */
-.work-grid a {
-    width: 39.5rem;
-    height:20rem;
-    border-color: black;
-    border-width: 0.05px;
-    border-style: solid;
-    display: inline-flex;
-	float:none;
-    flex-wrap:wrap;
-}
-
-
-
-.my-work:before,
-.my-work:after { content:""; display:grid; }
-.my-work:after { clear:both;}
-.my-work { zoom:1; /* For IE 6/7 */ }
-
-
-/* Bio Section */
-
-.biography .container {
     max-width: 1280px;
     margin: auto;
 }
 
-.biography img {
+.hero img{
   width: 100%;
   display: inline-flex;
+  position: absolute;
+  top: 150px;
+  left: -30px;
+}
 
+
+/* My Work Grid Section */
+
+.my-work {
+    width: 1280px;
+    height: 900px;
+    margin: none;
+    position: absolute;
+    top: 1061px;
+}
+.container {
+    display: inline-grid;
+    grid-template-columns: 640px 640px;
+    grid-template-rows: 50% 50%;
+    margin: none;
+}
+.image{
+    grid-column-start: 1 / span 2;
+    grid-column-end: two;
+    grid-row-start: row1-start
+    grid-row-end: span 2;
+    margin-top: -5px;
+}
+
+
+/* Bio Section */
+
+.biography .container{
+    width: 1280px;
+}
+
+svg {
+  width: 100%;
+  position: absolute;
+}
+
+.top-section {
+    position: absolute;
+    top: 1995px;
+}
+.bottom-section {
+    position: absolute;
+    top: 2530px;
+}
+
+#bio-text {
+    position: absolute;
+    top: 2315px;
+    left: 100px;
+}
+.unicorn {
+    position: absolute;
+    top: 2650px;
+    right: 100px;
+}
+
+.bio-img img{
+    width: 342px;
+    height: auto;
+    position: absolute;
+    top: 2240px;
 }
 
  /* Tool Box Section */
 
 .tool-box  {
-    max-width: 1280px;
-    max-height: 800px;
+    width: 100%;
     margin: auto;
+    position: absolute;
+    display: flex;
 }
 
-.icon-grid-row-1 {
-    width: 100%;
+.tools-bg {
+    width: 1280px;
+    height: 1126px;
+    position: absolute;
+    top: 2828px;
+    left: 0px;
+}
+
+.icon-grid {
+    width: 1180px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
-    flex-basis: auto;
-     margin: auto;
-     margin-top: 5rem;
-     -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-    }
-.icon-grid-row-2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: flex-end;
-     margin: auto;
-     margin-bottom: 180px;
-     -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
+    position: absolute;
+    top: 3100px;
+    right: 30px;
+    left: 30px;
 }
 
-.btn {
-  padding: 10px;
-  color: white;
-  background: black;
+.tool {
+    padding: 30px;
 }
+
+
+.tool img {
+    max-width: 111px;
+    max-height: 111px;
+    display: flex;
+    justify-content: space-between;
+    -webkit-filter: drop-shadow(-1px 0 1px rgba(0,0,0,0.5));
+
+}
+.tool p {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: AvenirBook, san-serif;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1.12px;
+}
+
+
 
 /* Large */
 @media all and (max-width: 1400px){
-.icon-grid-row-1, .icon-grid-row-2{
+.icon-grid{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -215,77 +245,61 @@ h1{
 
 /* Medium screens */
 @media all and (max-width: 768px) {
-    .tool{
+    .icon-grid{
         display: flex;
-       flex-direction: row;
-       flex-flow: row wrap;
+        position: absolute;
+        left: 20px;
+    }
+    .tool img,
+    .tool img p{
+       width: 90%;
+       height: 90%;
+       display: flex;
        justify-content: space-around;
-       align-items: center;
-       margin: auto;
-       width: 100px;
-       height: 100px;
-       margin: 2rem;
+
   }
 }
 
 /* Small screens */
 @media all and (max-width: 500px) {
+    .icon-grid{
+        display: flex;
+        position: absolute;
+        left: 20px;
+    }
+    .tool img,
+    .tool img p{
+       width: 80%;
+       height: 80%;
+       display: flex;
+       justify-content: space-around;
+
+   }
+   }
+/* Small screens */
+@media all and (max-width: 375px) {
  .tool{
      display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-content: space-around;
     flex-flow: wrap;
     margin: auto;
-    width: 65px;
-    height: 65px;
-    margin: 2rem;
+    width: 40px;
+    height: 40px;
+    margin: 1.5rem;
+    font-size: 10px;
 
   }
 }
 
-.tool img {
-    max-width: 111px;
-    max height: 110px;
-    display: flex;
-    justify-content: space-between;
-    -webkit-filter: drop-shadow(-1px 0 1px rgba(0,0,0,0.5));
-    width: 100%;
-    height: 100%;
-    align-self: center;
-}
-.tool p {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-self: center;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: AvenirBook, san-serif;
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 1.12px;
-}
+
 
 
 
 /* Testimonials Section*/
 
-.testimonials .header-container {
-    max-width: 1280px;
-    max-height: 43px;
-    margin: auto;
-    padding-top: 120px;
-    padding-bottom: 80px;
-    display: flex;
-}
-.header-container img {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    align-items: center;
-    display: flex;
-}
+/*
 .testimonials .slides-container {
     max-width: 1280px;
     max-height: 450px;
@@ -305,11 +319,10 @@ h1{
 
 .slide{
     position: absolute;
-    margin: 50px;
-    width: 1200px;
+    top: 3500px;
+    width: 1060px;
     height: 450px;
     opacity: 0;
-    z-index: 1;
     font-size: 24px;
 
     font-family: "PoiretOne-Regular", cursive;
