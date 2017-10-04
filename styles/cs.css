@@ -1,0 +1,20 @@
+.header .header-container {
+    width: 100%
+    position: absolute;
+
+}
+
+.header-container img {
+    width: 10%;
+    position: absolute;
+    top: 145px;
+    left: 50px;
+    z-index: 1;
+}
+
+.header-container svg {
+    /*width: 1210px;
+    height: 221px;*/
+    top: 200px;
+    width: 60%;
+}
