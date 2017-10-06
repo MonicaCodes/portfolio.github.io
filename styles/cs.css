@@ -1,3 +1,4 @@
+
 .header .header-container {
     width: 100%
     position: absolute;
@@ -17,4 +18,39 @@
     height: 221px;*/
     top: 200px;
     width: 60%;
+}
+
+.page-links {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.page-links div {
+    width: 40%;
+    display: inline-block;
+}
+
+.page-links div > div {
+    width: 40%;
+    position: absolute;
+    right: 5px;
+    float: right;
+}
+
+.page-links div a {
+    display: inline-block;
+    font-family: Anton-Regular, san-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.page-links div a span {
+    font-size: 24px;
+    font-family: PoiretOne-Regular, sans-serif;
+    margin-right: 2px;
 }

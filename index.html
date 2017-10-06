@@ -17,13 +17,15 @@
         <div class="navigation-container">
             <a class="logo-image" href="index.html"><img src="images/logo.png" /></a>
             <h1>Monica Berkowitz</h1>
-        <div class="mainMenu">
+<div class="mainMenu">
+            <a class="icon" href="#jumpBio"><img src="images/bio-link.png" /></a>
+            <a class="icon" href="#jumpWork"><img src="images/my-work.png" /></a>
             <a class="icon" href="#"><img src="images/icons8-email.png" /></a>
             <a class="icon" href="#"><img src="images/icons8-github.png" /></a>
             <a class="icon" href="#"><img src="images/icons8-linkedin.png" /></a>
             <a class="icon" href="#"><img src="images/icons8-twitter.png" /></a>
         </div>
-        </div>
+</div>
     </nav>
 
 
@@ -34,8 +36,9 @@
 
 
      <!-- My Work Section-->
-     <section class="my-work">
-         <div class="container">
+
+        <section class="my-work"><a name="jumpWork"></a>
+          <div class="work-container">
                 <a href="cs1.html"><img src="images/project1.png" class="image box1"/></a>
 
                 <a href="cs2.html"><img src="images/project1.png" class="image box1"/></a>
@@ -49,9 +52,15 @@
 
     <!-- Biography Section -->
 
+
     <section class="biography">
-        <div class="container">
-            <svg class="top-section" viewBox="0 0 1280 531" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <div class="bio-container"><a name="jumpBio"></a>
+            <div class="bio-pic">
+                <img src="images/monica.png"/>
+            </div>
+        <div class="top-section">
+            <svg class="top-section">
 
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Portfolio-Copy-3" transform="translate(0.000000, -2009.000000)">
@@ -66,14 +75,11 @@
                     </g>
                 </g>
         </svg>
-
-            <div class="bio-img">
-                <img src="images/monica.png"/>
-            </div>
+</div>
 
 
-
-<svg id="bio-text" width="868px" height="348px" viewBox="0 0 868 348" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <div class="bio-text">
+            <svg id="bio-text" width="868px" height="348px" viewBox="0 0 868 348" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <rect id="path-1" x="0" y="0" width="860" height="340"></rect>
         <filter x="-0.8%" y="-1.5%" width="101.6%" height="104.1%" filterUnits="objectBoundingBox" id="filter-2">
@@ -117,8 +123,11 @@
         </g>
     </g>
 </svg>
+</div>
 
-    <svg class="bottom-section" viewBox="0 0 1280 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <div class="bottom-section">
+
+    <svg class="bottom-section">
 
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Portfolio-Copy-3" transform="translate(0.000000, -2537.000000)" fill="#1B1721">
@@ -132,6 +141,7 @@
 </svg>
     <img class="unicorn" src="images/unicorn-icon.png"/>
         </div>
+    </div>
     </section>
 
 
@@ -333,7 +343,7 @@
     </span>
     <span class="symbol">-</span>
     <span>
-     <input id="Field4-2" name="Field4-2" type="tel" class="field text" value="" size="11" maxlength="4"
+     <input id="Field4-2" name="Field4-2" type="tel" class="field text" value="" size="11" maxlength="4" tabindex="6" placeholder="" required />
     </span>
     </li>
     <li id="foli6" class="notranslate">
@@ -400,23 +410,12 @@
     </div>
     </fieldset>
     </li>
-    <li id="foli108"
-    class="notranslate"><label class="desc" id="title108" for="Field108">
+    <li id="foli108" class="notranslate"><label class="desc" id="title108" for="Field108">
     Message
     </label>
 
     <div>
-    <textarea id="Field108"
-    name="Field108"
-    class="field textarea medium"
-    spellcheck="true"
-    rows="10" cols="50"
-
-    tabindex="13"
-    onkeyup=""
-    placeholder=""
-    ></textarea>
-
+    <textarea id="Field108" name="Field108" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="13" onkeyup placeholder></textarea>
     </div>
     </li>
     <li class="buttons">
@@ -431,7 +430,9 @@
 
     </ul>
     </form>
-
+<div class="call-to-action">
+    <h1>I look forward to hearing from you!</h1>
+</div>
 </div>
 </div>
 
@@ -440,16 +441,38 @@
 
 <!-- Footer Section -->
 
-    <div class="footer">
+<div class="footer">
          <div class="footer-container">
-             <h1>I look forward to hearing from you!</h1>
+             <p>Monica Berkowitz 2017. All Rights Reserved.</p>
+<div class="footer-icons">
 
-         </div>
-     </div>
+
+        <a class="tooltip" href="#"><img src="images/dark-at.png"/><span class="tooltiptext">Email</span></a>
+
+
+        <a class="tooltip" href="#"><img src="images/dark-gh.png"/><span class="tooltiptext">Github</span></a>
+
+        <a class="tooltip" href="#"><img src="images/dark-li.png" alt="linkedin"/><span class="tooltiptext">LinkedIn</span></a>
+
+        <a class="tooltip" href="#"><img src="images/dark-tw.png" alt="twitter"/><span class="tooltiptext">Twitter</span></a>
+</div>
+</div>
+
 
 
      <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
      <script src="scripts/landing.js"></script>
      <script src="scripts/contact.js"></script>
+
+     <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107674787-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107674787-1');
+</script>
+
    </body>
  </html>
